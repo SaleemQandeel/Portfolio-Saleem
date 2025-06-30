@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Saleem Qandeel</title>
+    <link rel="shortcut icon" href="photo/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#customers" class="nav-link">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="student-name" id="studentName"></h1>
+                    <h2 class="job-title" id="jobTitle"></h2>
+                    <p class="header-description">
+                        Passionate full stack web developer building modern websites and web apps from front to back.
+                    </p>
+
+                    <div class="header-buttons">
+                        <a href="#about" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="avatar-container">
+                        <img src="photo/Avatar.jpg" alt="Student Avatar" class="avatar" id="headerAvatar">
+                        <div class="avatar-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I am a dedicated computer science student with a passion for full stack web development and creating user-friendly digital experiences. My journey in programming started with curiosity and has evolved into a deep appreciation for clean code, innovative
+                        design, and problem-solving.
+                    </p>
+                    <p class="about-description">
+                        I specialize in full stack development using modern technologies like HTML5, CSS3, JavaScript, React for front-end, and Node.js, Express, and MongoDB for back-end. I believe in continuous learning and staying updated with the latest industry trends and
+                        best practices.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-download" id="downloadResume">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </button>
+                </div>
+                <div class="about-image">
+                    <div class="about-avatar-container">
+                        <img src="photo/Avatar.jpg" alt="About Avatar" class="about-avatar">
+                        <div class="about-avatar-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS3</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">java</span>
+                                    <span class="skill-percentage">94%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="94"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">10%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="10"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-percentage">10%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="10"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percentage">10%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="10"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools & Others</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">15%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="15"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">15%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="15"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p class="university">Islamic University of Gaza</p>
+                    <p class="years">2022 - 2026</p>
+                    <p class="description">Focused on web development, data structures, and algorithms.</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School Diploma</h3>
+                    <p class="university">Hasan Al-Harazin Secondary School </p>
+                    <p class="years">2022</p>
+                    <p class="description">Graduated with honors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A showcase of my recent work and achievements</p>
+            </div>
+            <div class="projects-content">
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-project="1">
+                        <div class="project-image">
+                            <img src="photo/project-card-1.png" alt="First Aid Website">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">First Aid Website</h3>
+                            <p class="project-description">
+                                A bilingual awareness website focused on essential first aid skills. It includes interactive cards, visual guidance, and emergency response tips in both Arabic and English.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <img src="photo/project-card-2.png" alt="Online Learning Platform">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Online Learning Platform</h3>
+                            <p class="project-description">
+                                A modern and responsive platform for online education featuring interactive lessons, student tracking, and virtual classrooms.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <img src="photo/project-card-3.png" alt="Modern Website Design">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Modern Website</h3>
+                            <p class="project-description">
+                                A sleek and responsive website with modern design principles, smooth animations, and optimized performance across all devices.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <img src="photo/project-card-4.png" alt="Online Gaza Store">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Online Gaza Store</h3>
+                            <p class="project-description">
+                                A localized e-commerce website built for Gaza residents. Features product browsing, secure online ordering, home delivery, and mobile-friendly design to support local businesses.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card" data-project="5">
+                        <div class="project-image">
+                            <img src="photo/project-card-5.png" alt="Login and Signup System">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Login & Signup System</h3>
+                            <p class="project-description">
+                                A secure user authentication system with login and registration forms, input validation, session handling, and user feedback for smooth account access.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card" data-project="6">
+                        <div class="project-image">
+                            <img src="photo/project-card-6.png" alt="Mobile App Landing Page">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Mobile App Landing Page</h3>
+                            <p class="project-description">
+                                A sleek and responsive landing page for promoting a mobile application. Features call-to-action buttons, app preview sections, and conversion-focused layout.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section class="customers" id="customers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Happy Customers</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="customers-content">
+                <div class="customer-item">
+                    <img src="photo/waleed.jpg" alt="Waleed Alkabariti" class="customer-avatar">
+                    <h3>Waleed Alkabariti</h3>
+                    <p class="description">
+                        Leader of Hope in Hand organization. A first aid awareness website was developed to support their community efforts. The website was professionally designed and developed by Saleem Qandeel, delivering a clean, responsive, and impactful user experience.
+                    </p>
+
+                </div>
+
+
+                <div class="customer-item">
+                    <img src="photo/ameer.jpg" alt="Ameer Harzallah" class="customer-avatar">
+                    <h3>Ameer Harzallah</h3>
+                    <p class="description">
+                        Founder of the Gaza Market project idea. A modern and localized e-commerce website was developed to bring his vision to life and support the local economy. The platform was professionally developed by Saleem Qandeel, combining sleek design with strong
+                        functionality tailored for the local community.
+                    </p>
+                </div>
+
+
+                <div class="customer-item">
+                    <img src="photo/Taha.jpg" alt="Taha Qandeel" class="customer-avatar">
+                    <h3>Taha Qandeel</h3>
+                    <p class="description">
+                        Founder of the Online Learning Platform project. The website was developed to support digital education with interactive lessons and responsive design. It was skillfully brought to life by Saleem Qandeel, ensuring a smooth and engaging user experience.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>saleemqandeel2004@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+972 59 292 8603</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gaza, Palestine</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <div class="error-message" id="error-name"></div>
+
+                    <input type="email" placeholder="Your Email" required>
+                    <div class="error-message" id="error-email"></div>
+
+                    <textarea placeholder="Your Message" rows="5" maxlength="500" required></textarea>
+                    <div class="error-message" id="error-message"></div>
+                    <div id="charCounter"></div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Saleem Qandeel. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/SaleemQandeel/portfolio.git" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/saleem.wael.qandeel " class="social-link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+
+                    </a>
+                    <a href="https://www.instagram.com/saleem.qandeel/" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Title</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slides" id="carouselSlides">
+
+                        </div>
+                        <button class="carousel-btn carousel-prev" id="carouselPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" id="carouselNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators" id="carouselIndicators">
+
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h3>Project Overview</h3>
+                    <p id="modalDescription">Detailed project description will be displayed here.</p>
+                    <h3>Technologies Used</h3>
+                    <div class="modal-tech" id="modalTech">
+
+                    </div>
+                    <h3>Key Features</h3>
+                    <ul id="modalFeatures">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</html>
